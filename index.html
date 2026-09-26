@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmat | Game Art Specialist Portfolio</title>
+    <style>
+        /* --- TEMA WARNA DARK FANTASY & PIXEL ESTETIK --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px dashed #45f3ff;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header h1 {
+            color: #45f3ff;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(69, 243, 255, 0.3);
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #66fcf1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .section-title {
+            color: #66fcf1;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            border-left: 4px solid #45f3ff;
+            padding-left: 10px;
+        }
+        
+        /* --- TATA LETAK GRID UNTUK ASSET PACKS --- */
+        .grid-portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background-color: #1f2833;
+            border: 2px solid #45f3ff;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(69, 243, 255, 0.4);
+        }
+        .card-preview {
+            width: 100%;
+            height: 200px;
+            background-color: #0b0c10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #45f3ff;
+            overflow: hidden;
+        }
+        .card-preview img {
+            max-width: 100%;
+            max-height: 100%;
+            /* Menjaga piksel tetap tajam saat gambar diperbesar (Cocok untuk Pixel Art) */
+            image-rendering: pixelated; 
+            object-fit: contain;
+        }
+        .card-info {
+            padding: 15px;
+        }
+        .card-info h3 {
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        .card-info p {
+            font-size: 0.9rem;
+            color: #c5c6c7;
+            margin-bottom: 15px;
+        }
+        .btn-store {
+            display: inline-block;
+            background-color: transparent;
+            color: #45f3ff;
+            border: 1px solid #45f3ff;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            text-align: center;
+            width: 100%;
+        }
+        .btn-store:hover {
+            background-color: #45f3ff;
+            color: #0b0c10;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            border-top: 1px solid #1f2833;
+            color: #66fcf1;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- --- BAGIAN ATAS / PROFILE --- -->
+    <header>
+        <h1>RAHMAT</h1>
+        <p>2D Pixel Art Game Specialist & Solo Developer</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">🕹️ MY DIGITAL ASSET PACKS (8 PACKS COMPLETION)</h2>
+        
+        <!-- --- GRID UTAMA 8 CARDS --- -->
+        <div class="grid-portfolio">
+            
+            <!-- PACK 1 -->
+            <div class="card">
+                <div class="card-preview">
+                    <!-- Ganti 'asset1.png' dengan nama file gambar art kamu -->
+                    <img src="asset1.png" alt="Pack 1 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #01</h3>
+                    <p>Top-Down 3/4 Perspective environment tilemaps and props.</p>
+                    <a href="https://itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 2 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="asset2.png" alt="Pack 2 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #02</h3>
+                    <p>Main character spritesheets with fluid combat animations.</p>
+                    <a href="https://itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 3 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="Main_character-Idle_down-Base_body-4x.gif" alt="Pack 3 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #03</h3>
+                    <p>Dungeon and ruins assets themed around dark environment.</p>
+                    <a href="https://rachmata.itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 4 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="asset4.png" alt="Pack 4 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #04</h3>
+                    <p>Enemy sprites and modular attack patterns animations.</p>
+                    <a href="https://itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 5 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="asset5.png" alt="Pack 5 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #05</h3>
+                    <p>Custom user interface UI elements and status bars.</p>
+                    <a href="https://itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 6 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="asset6.png" alt="Pack 6 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #06</h3>
+                    <p>Interactive interactive items, breakables, and chest props.</p>
+                    <a href="https://itch.io/rachmata.itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 7 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="Main_character-Walk_up-Base_body-4x.png" alt="Pack 7 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #07</h3>
+                    <p>Atmospheric special effects VFX, particles, and magic fields.</p>
+                    <a href="https://itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+            <!-- PACK 8 -->
+            <div class="card">
+                <div class="card-preview">
+                    <img src="asset8.png" alt="Pack 8 Preview">
+                </div>
+                <div class="card-info">
+                    <h3>Asset Pack #08</h3>
+                    <p>Complete execution asset updates and animation vertical slice.</p>
+                    <a href="https://itch.io" class="btn-store" target="_blank">Lihat di Itch.io</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --- FOOTER / TANDA TANGAN --- -->
+    <footer>
+        <p>&copy; 2026 Rahmat | Telecommunication Network Engineering & Art Fusion</p>
+    </footer>
+
+</body>
+</html>
